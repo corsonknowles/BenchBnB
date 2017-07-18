@@ -13,7 +13,7 @@ class SessionForm extends React.Component {
 		return e => { this.setState({[field]: e.currentTarget.value }); };
 	}
 
-	_handleSubmit(type){
+	handleSubmit(type){
 		return () => {
 			const user = this.state;
 			this.props.processForm(user, type);
@@ -59,10 +59,10 @@ class SessionForm extends React.Component {
 							</label>
 
 							<br />
-							<button onClick={this._handleSubmit('login')}>
+							<button onClick={this.handleSubmit('login')}>
 								Log In
 							</button>
-							<button onClick={this._handleSubmit('signup')}>
+							<button onClick={this.handleSubmit('signup')}>
 								Sign Up
 							</button>
 						</div>

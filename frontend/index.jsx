@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import configureStore from './store/store.js'
-import { Root } from './components/root'
+import Root from './components/root'
 
 // testing
 import { login, signup, logout } from './util/session_api_util'
